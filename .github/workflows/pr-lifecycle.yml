@@ -21,5 +21,5 @@ jobs:
 
       - name: Run only when PR is merged
         run: |
-          echo "✅ This pull request was merged."
+          echo "✅ This pull request was merged"
           echo "Merged PR: ${{ github.event.pull_request.title }}"
