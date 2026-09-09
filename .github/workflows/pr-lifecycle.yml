@@ -18,7 +18,6 @@ jobs:
           echo "Source Branch: ${{ github.event.pull_request.head.ref }}"
 
       - name: Run only when PR is merged
-        if: github.event.action == 'closed' && github.event.pull_request.merged == true
         run: |
           echo "✅ This pull request was merged."
           echo "Merged PR: ${{ github.event.pull_request.title }}"
