@@ -3,12 +3,13 @@ name: PR Lifecycle
 on:
   pull_request:
     types:
-      - auto_merge_enabled
+      - closed
     branches: 
       - master
     
 jobs:
   pr-info:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
