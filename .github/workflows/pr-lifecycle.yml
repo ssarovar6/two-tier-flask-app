@@ -3,7 +3,7 @@ name: PR Lifecycle
 on:
   pull_request:
     types:
-      - closed
+      - auto_merge_enabled
     branches: 
       - master
     
